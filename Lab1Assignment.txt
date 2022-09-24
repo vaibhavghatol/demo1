@@ -1,0 +1,286 @@
+Q 1 Java program to print welcome message.
+
+package lab1;
+
+public class welcome
+{
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Welcome");
+
+	}
+
+}
+
+================================================================
+Q 2 Java program to print sum of  three float numbers
+
+package lab1;
+
+public class floatNumbers {
+
+	public static void main(String[] args) 
+	{
+		float a=1.0f;
+		float b=2.1f;
+		float c=3.0f;
+		
+		float d=a+b+c;
+		
+		System.out.println(d);
+
+	}
+
+}
+====================================================================
+Q 3 Java Program to Swap Two Numbers
+
+package lab1;
+
+public class swapTwoNumbers {
+
+	public static void main(String[] args) 
+	{
+		int a=23;
+		int b=46;
+		int temp;
+		
+		System.out.println("before swapping"  +  a  +  b);
+		
+		temp=a;
+		a=b;
+		b=temp;
+		
+		System.out.println("after swapping"  +  a  +  b);
+
+	}
+
+}
+==============================================================================
+Q 4 Wap to check if number is even or odd
+
+package lab1; 
+
+public class evenORodd {
+
+	public static void main(String[] args) 
+	{
+		int a=32;
+		
+		if((a%2)==0)
+			System.out.println("Number is even");
+		
+		else
+			System.out.println("Number is odd");
+
+	}
+
+}
+====================================================================================
+Q 5 wap to check from three given number  that whether a number is greater than or equal to 20 and less than other numbers .print appropriate message .
+
+package lab1;
+
+public class question5 {
+
+	public static void main(String[] args) 
+	{
+		int a=30;
+		int b=34;
+		int c=23;
+		
+		if(a>=20 && (a>b && a>c))
+			System.out.println("a is greater");
+		
+		else if(b>=20 && (b>a && b>c))
+			System.out.println("b is greater");
+		
+		else if(c>=20 && (c>a && c>b))
+			System.out.println("c is greater");
+
+	}
+
+}
+====================================================================================
+Q 7 wap to check if sales of a person is greater than 10000 then eligible for bonus 
+else not eligible calculate bonus as 20% of sales.
+
+package lab1;
+
+public class bonus {
+
+	public static void main(String[] args) 
+	{
+		float sales=24355f;
+		
+		float bonus;
+		
+		if(sales>=10000)
+		{
+			System.out.println("eligible for bonus");
+			bonus= sales*20/100;
+			System.out.println("bonus=" +  bonus);
+		}
+		else
+			System.out.println("not eligible for bonus");
+		}
+
+}
+===========================================================================================
+Q 8 wap to check if two given integer value is in range of 18 and 100 print eligible for voting else not eligible .
+
+package lab1;
+
+public class votingAge {
+
+	public static void main(String[] args) 
+	{
+		int age=110;
+		
+		
+		if(age>=18 && age<=100)
+			System.out.println("allow to voting");
+		else
+			System.out.println("not allow to voting");
+
+	}
+
+}
+=============================================================================================
+Q 9 wap to print average of  given five subjects marks of student and check if average >=40 print Pass else print fail
+
+package lab1;
+
+import java.util.Scanner;
+
+public class averageOfsubject {
+
+	public static void main(String[] args)
+	{
+		Scanner s = new Scanner(System.in);
+		
+		int a =s.nextInt();
+		int b =s.nextInt();
+		int c =s.nextInt();
+		int d =s.nextInt();
+		int e =s.nextInt();
+		int average;
+		
+		System.out.println("hindi=" + a);
+		System.out.println("history=" + b);
+		System.out.println("chemistry=" + c);
+		System.out.println("physics=" + d);
+		System.out.println("maths=" + e);
+		
+		average=(a+b+c+d+e)/5;
+		System.out.println("Average=" + average);
+		
+		if(average>=40)
+			System.out.println("pass");
+		else
+			System.out.println("fail");
+		
+
+	}
+
+}
+=========================================================================================
+Q10 WAP to ask name ,age and salary of an employee and print on console.
+
+package lab1;
+
+import java.util.Scanner;
+
+public class practice 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s= new Scanner(System.in);
+		String name;
+		int age;
+		float salary;
+		
+		System.out.println("enter name  age and  salary");
+		name=s.nextLine();
+		age= s.nextInt();
+		salary=s.nextFloat();
+		System.out.println("name=" +  name);
+		System.out.println("age=" +  age);
+		System.out.println("salary=" +  salary);
+		
+	}
+
+}
+============================================================================================= 
+Q 11 wap  that ask two numbers from user and print greater number among two 
+
+package lab1;
+
+import java.util.Scanner;
+
+public class noFromUser {
+
+	public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		int a=s.nextInt();
+		    System.out.println("a="+ a);
+		
+		int b=s.nextInt();
+	    	System.out.println("b="+ b);
+		
+		if(a==b)
+			System.out.println("both numbers are equal");
+		else if(a>b)
+			System.out.println("print greater value" + a);
+		else if(b>a)
+			System.out.println("print grater value"  + b);
+		}
+
+}
+===========================================================================================
+Q 12  wap to ask product name and price of product from user and calculate discount i.e 
+if price > 2000 then discount is 10 percent of price 
+else discount is 7 % of price
+
+package lab1;
+
+import java.util.Scanner;
+
+public class practice12 {
+
+	public static void main(String[] args) 
+	{
+		Scanner s= new Scanner(System.in);
+		
+		String ProductName;
+		float price;
+		float discount = 0;
+		System.out.println("productName  price  discount");
+		
+		ProductName=s.nextLine();
+		System.out.println("productName=" + ProductName);
+
+		price=s.nextFloat();
+                System.out.println("price=" + price);
+        
+        if(price>2000)
+        	 discount=((price*10)/100);
+        	{
+        	System.out.println(discount);
+	        }
+         if(price<2000)
+        	discount=((price*7)/100);
+        {
+        	System.out.println(discount);
+        }
+        
+        }
+}
+==============================================================================================
+
+
+
+
+
